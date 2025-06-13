@@ -9,6 +9,8 @@
 // See the Ibex Reference Guide (Custom Reset Values under Physical Memory
 // Protection) for more information.
 
+import cve2_pkg::*;
+
 localparam pmp_cfg_t pmp_cfg_rst[16] = '{
   '{lock: 1'b0, mode: PMP_MODE_OFF, exec: 1'b0, write: 1'b0, read: 1'b0}, // region 0
   '{lock: 1'b0, mode: PMP_MODE_OFF, exec: 1'b0, write: 1'b0, read: 1'b0}, // region 1
